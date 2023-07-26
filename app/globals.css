@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +8,154 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --bg-primary: #0f4a9d;
 }
+.navbar {
+  height: 80px;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  transition: width 0.3s;
+}
+
+.button-primary {
+  background-color: var(--bg-primary);
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.button-primary:hover {
+  box-shadow: rgba(0, 0, 0, 0.95) 0 3px 9px 0;
+  transform: translateY(2px);
+}
+
+.tracking-wider.font-semibold.my-5.space-x-4 a {
+  position: relative; /* Ensure the parent is relatively positioned */
+}
+
+.tracking-wider.font-semibold.my-5.space-x-4 a::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-image: linear-gradient(to right, #0449a2, #ffa92c);
+  background-size: 200% 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 500ms;
+}
+
+.tracking-wider.font-semibold.my-5.space-x-4 a:hover::after {
+  transform: scaleX(1);
+}
+.nav__toggle {
+  display: block;
+  position: absolute;
+  right: 1.8rem;
+  top: 1.3rem;
+  background: none;
+  border: none;
+}
+.site_header {
+  color: #000;
+}
+.nav__wrapper {
+  margin-top: 0.4em;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--light-grey);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-100%);
+  /* transform: translateX(-27px); */
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  margin-top: 0;
+  margin-top: 5px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5),
+    inset -0px -0px 16px 0px rgba(145, 192, 255, 0.6),
+    inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem;
+  color: black;
+}
+
+.nav__item {
+  display: block;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none; /* removes the default underline from the link */
+  transition: all 0.2s ease-in-out; /* adds a smooth transition to the hover effect */
+}
+.nav__item:hover {
+  text-decoration: underline;
+}
+.nav__item::before {
+  content: ""; /* adds a content property to the pseudo-element, which is required for the hover effect to work */
+  position: absolute; /* positions the underline absolutely */
+  bottom: 0; /* positions the underline at the bottom of the navlink */
+  left: 0; /* starts the underline at the left edge of the navlink */
+  right: 0; /* stretches the underline to the right edge of the navlink */
+  height: 2px; /* sets the height of the underline */
+  background-color: var(--btn-red); /* sets the color of the underline */
+  transform: translateX(
+    -100%
+  ); /* moves the underline out of view to the left */
+  transition: all 0.2s ease-in-out; /* adds a smooth transition to the hover effect */
+}
+
+.nav__item:hover:before {
+  transform: translateX(
+    0
+  ); /* brings the underline back into view from the left */
+}
+/* .active { */
+/* border-top: 2px solid #ff4742; */
+/* border-bottom: 2px solid #ff4742; */
+/* } */
