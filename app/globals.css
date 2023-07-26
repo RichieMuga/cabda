@@ -55,6 +55,37 @@
   box-shadow: rgba(0, 0, 0, 0.95) 0 3px 9px 0;
   transform: translateY(2px);
 }
+.button-secondary {
+  background-color: white;
+  border-radius: 4px;
+  border-width: 4px;
+  border-color: var(--bg-primary);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: var(--bg-primary);
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  z-index: 1;
+}
+
+.button-secondary:hover {
+  box-shadow: rgba(0, 0, 0, 0.95) 0 3px 9px 0;
+  transform: translateY(2px);
+}
 
 .tracking-wider.font-semibold.my-5.space-x-4 a {
   position: relative; /* Ensure the parent is relatively positioned */
@@ -96,7 +127,7 @@
   top: 100%;
   right: 0;
   left: 0;
-  z-index: 1;
+  z-index: 100;
   width: 100%;
   background-color: var(--light-grey);
   visibility: hidden;
