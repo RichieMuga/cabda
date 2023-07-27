@@ -10,7 +10,7 @@ const VisionMission = () => {
             {/* Vision */}
             <div className='flex md:flex-row flex-col'>
                 <Image height={580} width={480} alt="Vision" src={vision} />
-                <div className='lg:px-[7em] md:px-[5em] px-2 flext-shrink-2 leading-normal'>
+                <div className='lg:px-[7em] md:px-[5em] px-2 flext-shrink-2 leading-normal text-right'>
                     <h4 className='text-primaryBlue font-bold  text-2xl mt-[3em] mb-[.5em] text-right'>Vision</h4>
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, recusandae pariatur? Explicabo maiores laudantium sit voluptas? Recusandae commodi praesentium assumenda aperiam eaque nulla aspernatur.</h3>
                 </div>
