@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar';
 import  Hero  from '@/components/Hero';
 import CentralTopics from '@/components/landing/CentralTopics';
 import VisionMission from '@/components/landing/VisionMission';
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <CentralTopics/>
         <VisionMission/>
       </div>
+      <Footer/>
     </main>
   )
 }
