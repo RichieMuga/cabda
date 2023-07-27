@@ -3,7 +3,6 @@ import React from 'react'
 const OrangeBorderCard = ({heading,subHeading,description,icon}) => {
   return (
     <div className='border-8 border-primaryOrange flex items-center justify-center flex-col'>
-      {/*TODO: add Icon */}
       <div className='mt-[1em]'>
         {icon}
       </div>
