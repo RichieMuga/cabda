@@ -1,11 +1,9 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Logo from '@/public/favicon.png'
 
 const Footer = () => {
   return (
-
       <footer class="bg-white dark:bg-gray-900">
           <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
               <div class="md:flex md:justify-between">
