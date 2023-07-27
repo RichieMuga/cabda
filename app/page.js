@@ -2,6 +2,7 @@ import AboutUs from '@/components/landing/AboutUs';
 import Navbar from '@/components/Navbar';
 import  Hero  from '@/components/Hero';
 import CentralTopics from '@/components/landing/CentralTopics';
+import VisionMission from '@/components/landing/VisionMission';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Hero />
         <AboutUs/>
         <CentralTopics/>
+        <VisionMission/>
       </div>
     </main>
   )
