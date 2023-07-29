@@ -1,14 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import patners from "@/public/patners.png"
 
 const Patnerprograms = () => {
   return (
-    <section>
+    <>
+      <Head>
+        <title>PatnerPrograms | CABDA</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <Navbar />
-      <div className='px-[10em] flex justify-center'>
+      <div className='px-[10em] flex justify-center py-[3em]'>
         <Image src={patners} alt="together we are one" width={200} height={200} />
       </div>
       <div className='px-[3em] text-center'>
@@ -19,7 +24,7 @@ const Patnerprograms = () => {
         </button>
       </div>
       <Footer />
-    </section>
+    </>
   )
 }
 
