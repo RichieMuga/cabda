@@ -6,22 +6,22 @@ export const navbarLinks = [
     },
     {
         id: 2,
-        href: '/about',
+        href: '/',
         label: 'About Us',
     },
     {
-        id:3,
-        href: '/centralTopics',
+        id: 3,
+        href: '/',
         label: 'Central Topics',
     },
     {
         id: 4,
-        href: '/blog',
+        href: '/contactus',
         label: 'Contact Us',
     },
     {
         id: 5,
-        href: '/ourTeam',
+        href: '/team',
         label: 'Our Team',
     },
 ]
