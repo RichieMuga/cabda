@@ -31,9 +31,14 @@ const Navbar = () => {
 
   return isMobile ? <MobileNavbar /> : <DesktopNavbar />;
 };
+
+const handlePatners = () => {
+  window.location.href = "/patnerprograms"
+}
+
 const DesktopNavbar = () => {
   return (
-    <nav className="navbar mb-[2em] w-[100%] bg-white text-black flex md:flex-row flex-col justify-between items-center px-10 drop-shadow-lg">
+    <nav className="navbar mb-[2em] w-[auto] bg-white text-black flex md:flex-row flex-col justify-between items-center px-10 drop-shadow-lg">
       <div className='flex items-center justify-between w-full'>
         <Link href="/">
           <Image src={Logo} width={65} height={65} alt="Logo" />
@@ -48,7 +53,7 @@ const DesktopNavbar = () => {
             </span>
           ))}
         </div>
-        <button className='button-primary'>
+        <button className='button-primary'  onClick={handlePatners}>
           Partner Programs
         </button>
       </div>
@@ -75,9 +80,11 @@ const MobileNavbar = () => {
           {navOpen ?
             (
               navbarLinks.map((link) => (
+                <>
                 <Link key={link.id} href={link.href} className="nav__item text-right mr-10 text-lg my-10 font-semibold">
                   {link.label}
                 </Link>
+                </>
               ))
             )
             :
