@@ -68,7 +68,7 @@ const MobileNavbar = () => {
     setNavOpen(!navOpen);
   }
   return (
-    <nav className="navbar  fixed top-0 left-0 w-[100%] bg-white text-black flex md:flex-row flex-col justify-between items-center px-10 drop-shadow-lg">
+    <nav className="navbar mb-[2em] fixed top-0 left-0 w-[100%] bg-white text-black flex md:flex-row flex-col justify-between items-center px-10 drop-shadow-lg">
       <div className='flex justify-between w-full'>
         <Link href="/">
           <Image className='py-2' src={Logo} width={60} height={60} alt="Logo" />
