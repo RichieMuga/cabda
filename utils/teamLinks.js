@@ -1,30 +1,24 @@
+import Paul from '@/public/team/PaulIsiye.jpeg'
+import Shallam from "@/public/team/shallam1.jpeg"
+import Ephy from '@/public/team/EphyImbali.jpeg'
+
 export const teamLinks = [
     {
         id: 1,
-        name: 'Lorem Ipsum',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi.',
-        image: '',
+        name: 'Paul Isiye',
+        title: 'Director',
+        image: Paul,
     },
     {
         id: 2,
-        name: 'Lorem Ipsum',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi.',
-        image: '',
+        name: "Shallam Mung'ole",
+        title: 'Director',
+        image: Shallam,
     },
     {
         id: 3,
-        name: 'Lorem Ipsum',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi.',
-        image: '',
-    },
-    {
-        id: 4,
-        name: 'Lorem Ipsum',
-        title: 'Lorem Ipsum',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi. Sed euismod, diam id aliquam aliquet, nunc nisl ultricies nunc, vitae aliquam nisl nunc eu nisi.',
-        image: '',
+        name: 'Ephy Imbali',
+        title: 'Director',
+        image: Ephy,
     },
 ]
