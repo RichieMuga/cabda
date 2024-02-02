@@ -4,16 +4,16 @@ export const navbarLinks = [
         href: '/',
         label: 'Home',
     },
-    {
-        id: 2,
-        href: '/',
-        label: 'About Us',
-    },
-    {
-        id: 3,
-        href: '/',
-        label: 'Central Topics',
-    },
+    // {
+    //     id: 2,
+    //     href: '/',
+    //     label: 'About Us',
+    // },
+    // {
+    //     id: 3,
+    //     href: '/',
+    //     label: 'Central Topics',
+    // },
     {
         id: 4,
         href: '/contactus',
