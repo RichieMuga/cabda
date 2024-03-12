@@ -1,10 +1,10 @@
-# CABDA(COMMUNITY ASSET BUILDING AND DEVELOPMENT ACTION)
+# MyJobsKenya - Jobs Tracking App
 
 ## Introduction
-This repository embodies the spirit of our initiative, focused on uplifting families, cultivating wealth, and nurturing community growth through sustainable businesses.
+This repository is a go-to React app for streamlined job tracking. Stay organized and motivated during your job search with this simple and intuitive tool.
 
 ## Motivation
-it's a shared motivation to uplift families, cultivate wealth, and foster authentic community growth through sustainable businesses. 
+To simply track the jobs you've applied to and form a dataset on it
 
 ## Getting Started
 First install dependancies:
